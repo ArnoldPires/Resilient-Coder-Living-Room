@@ -2,11 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Resilient Coder Living Room</title>
   <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="index.js"></script>
 </head>
 <body>
   <a-scene>
+    <a-assets>
+      <video id="rscodervid"autoplay loop="true" src="https://ucarecdn.com/7126e5d5-2ecc-449b-a06f-7bc753336a52/" webkit-playsinline>
+    </a-assets>
     <a-entity geometry="primitive: plane; height: 14; width: 22" position="-21 2.75 2.21" rotation="0 90 0"  material="shader: flat;
     src: url(http://www.shapeup.com/wp-content/uploads/2015/03/boston-photo1.jpg)"></a-entity>
     <a-entity geometry="primitive: plane; height: 9; width: 22" position="18.02 1.92 -1.67" rotation="0 -90 0"  material="shader: flat;
@@ -144,9 +149,8 @@
   <a-entity geometry="primitive: box; depth: 0.1; height: 6; width: 1" position="9.7 2.7 -6" rotation="0 90 0 " material="shader: flat;
   src: url(https://ucarecdn.com/0b2d713f-56f2-47ae-b0d6-69da23de3131/); repeat: 2 1"></a-entity>
 
-
-  <a-video src="https://ucarecdn.com/6b3e0482-ac5a-43d0-9a46-1b8b845190f7/" autoplay="true" width="9" height="5" position="0 2.8 -5.519"></a-video>
-  <a-entity collada-model="url (C:\Users\Arnaldo\desktop\aframe\A-frame-Movie\model\model.dae)" scale="1 1 1" position="0 0 4.3" rotation="0 90 0"></a-entity>
+  <a-video src="https://ucarecdn.com/6b3e0482-ac5a-43d0-9a46-1b8b845190f7/" autoplay="true" width="6.80" height="5" position="4.26 6.76 1.43" rotation="80 0 0"></a-video>
+  <a-video src="#rscodervid" width="9" height="5" position="0 2.8 -5.519"></a-video>
 
   <!-- Shelf Items -->
   <a-entity geometry="primitive: plane; height: 0.9; width: 3" position="7.5 0.42 -5.99" rotation="0 0 0"  material="shader: flat; transparent: true;
@@ -216,7 +220,7 @@
   src: url(https://ucarecdn.com/b790e23b-03e2-472e-8aac-67cb97940fa3/)"></a-entity>
   <a-entity geometry="primitive: plane; height: 4.50; width: 7.80" position="14.53 4.57 15" rotation="0 -90 0"  material="shader: flat;
   src: url(https://ucarecdn.com/b70058f0-d735-4dee-a778-b87ab7caaa94/)"></a-entity>
-  <a-entity geometry="primitive: plane; height: 5; width: 7.80" position="-0.18 6.71 1.45" rotation="80 0 0"  material="shader: flat;
+  <a-entity geometry="primitive: plane; height: 5; width: 7.80" position="-3.44 6.71 1.45" rotation="80 0 0"  material="shader: flat;
   src: url(https://ucarecdn.com/33c5eedc-c76d-4fe7-9dfd-8915c697dfdd/)"></a-entity>
   <a-entity geometry="primitive: plane; height: 4; width: 3.20" position="4.82 4.49 10.98" rotation="0 180 0"  material="shader: flat; transparent: true;
   src: url(https://ucarecdn.com/f02c066c-57f5-4dca-a8d7-6eefb8ab3abe/)"></a-entity>
