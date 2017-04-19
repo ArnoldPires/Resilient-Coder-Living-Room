@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cardboard couch</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/flysonic10/aframe-passthrough/master/dist/aframe-passthrough-component.min.js"></script>
+  <script src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/master/dist/aframe-orbit-controls-component.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background: black;">
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="crate-obj" src="https://cdn.rawgit.com/flowerio/hello-vr/master/couch.obj"></a-asset-item>
+      <a-asset-item id="crate-mtl" src="https://cdn.rawgit.com/flowerio/hello-vr/master/couch.mtl"></a-asset-item>
+    </a-assets>
+    <a-entity id="camera" camera look-controls position="0 0 5" orbit-controls="
+              autoRotate: false;
+              target: #target;
+              enableDamping: true;
+              dampingFactor: 0.125;
+              rotateSpeed:0.08;
+              minDistance:3;
+              maxDistance:40;" mouse-cursor="">
+      <a-passthrough width="16" height="9" scale="4 4 4"></a-passthrough>
+    </a-entity>
+    <a-entity id="target" obj-model="obj: #crate-obj; mtl: #crate-mtl" position="0 0 0" scale="0.2 0.2 0.2"></a-entity>
+  </a-scene>
+</body>
+</html>

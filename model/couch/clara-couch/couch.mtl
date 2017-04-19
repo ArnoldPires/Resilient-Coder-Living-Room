@@ -1,0 +1,21 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl f0f0f
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.058824 0.058824 0.058824
+Ks 0.001176 0.001176 0.001176
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl leather_texMaterial
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 0.901961 0.709804
+Ks 0.001176 0.001176 0.001176
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd leather tex.jpg
