@@ -2,14 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>Resilient Coder Living Room</title>
   <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1">
 </head>
 <body>
   <a-scene>
     <a-assets>
-      <video id="rscodervid"autoplay loop="true" src="rscoder.mp4" webkit-playsinline>
+        <video webkit-playsinline playsinline id="rc-video" autoplay loop="true" src="rscoder-yt.mp4">
+        <a-asset-item id="crate-obj" src="https://cdn.rawgit.com/flowerio/hello-vr/master/couch.obj"></a-asset-item>
+        <a-asset-item id="crate-mtl" src="https://cdn.rawgit.com/flowerio/hello-vr/master/couch.mtl"></a-asset-item>
     </a-assets>
     <a-entity geometry="primitive: plane; height: 14; width: 22" position="-21 2.75 2.21" rotation="0 90 0"  material="shader: flat;
     src: url(http://www.shapeup.com/wp-content/uploads/2015/03/boston-photo1.jpg)"></a-entity>
@@ -148,10 +152,12 @@
   <a-entity geometry="primitive: box; depth: 0.1; height: 6; width: 1" position="9.7 2.7 -6" rotation="0 90 0 " material="shader: flat;
   src: url(https://ucarecdn.com/0b2d713f-56f2-47ae-b0d6-69da23de3131/); repeat: 2 1"></a-entity>
 
+  <!-- Couch and Video -->
   <a-video src="https://ucarecdn.com/6b3e0482-ac5a-43d0-9a46-1b8b845190f7/" autoplay="true" width="6.80" height="5" position="4.26 6.76 1.43" rotation="80 0 0"></a-video>
   <a-entity geometry="primitive: box; depth: 0.1; height: 5; width: 8.90" position="0 2.83 -5.46" rotation="0 180 0 " material="shader: flat;
   src: url(https://ucarecdn.com/a4b6a7b5-88d0-4346-b689-096829060c2c/);"></a-entity>
-  <a-video src="#rscodervid" width="9" height="5" position="0 2.8 -5.51"></a-video>
+  <a-video src="#rc-video" width="9" height="5" position="0 2.8 -5.51"></a-video>
+  <a-entity id="target" obj-model="obj: #crate-obj; mtl: #crate-mtl" position="0 -1.417 3.670" rotation="0 180 0" scale="0.2 0.2 0.2"></a-entity>
 
   <!-- Shelf Items -->
   <a-entity geometry="primitive: plane; height: 0.9; width: 3" position="7.5 0.42 -5.99" rotation="0 0 0"  material="shader: flat; transparent: true;
@@ -209,7 +215,7 @@
   src: url(https://ucarecdn.com/42d3ab80-f1c9-4d51-a7d7-c6424c0a50f0/); repeat: 1 1"></a-entity>
 
   <!--Dog -->
-  <a-entity geometry="primitive: plane; height: 1.50; width: 2.90" position="-4.15 0.49 5.80" rotation="0 100 0"  material="shader: flat; transparent: true;
+  <a-entity geometry="primitive: plane; height: 1.50; width: 2.90" position="-4.719 0.523 1.537" rotation="0 60 0"  material="shader: flat; transparent: true;
   src: url(https://ucarecdn.com/44ed0614-3795-4db6-9fb5-dabd5b779256/)"></a-entity>
 
   <!--snake -->
@@ -249,7 +255,7 @@
   src: url(https://ucarecdn.com/aa4a34da-ed88-4f35-9960-8d79511ce9cb/)"></a-entity>
 
   <!-- Camera -->
-  <a-entity camera gamepad-controls look-controls position="0 2 4" cursor-visible="enabled: false" wasd-controls="enabled: false">
+  <a-entity camera gamepad-controls look-controls position="-0.906 2.805 4.748" cursor-visible="enabled: false" wasd-controls="enabled: false">
   </a-entity>
 
 
