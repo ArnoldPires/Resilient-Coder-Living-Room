@@ -5,6 +5,8 @@
   <meta name="mobile-web-app-capable" content="yes">
   <title>Resilient Coder Living Room</title>
   <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  <script src="https://vr.austinknight.com/assets/aframe-look-at-component.min.js"></script>
+  <script src="https://vr.austinknight.com/assets/aframe-event-set-component@3.0.1"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1">
 </head>
@@ -253,7 +255,11 @@
   src: url(https://ucarecdn.com/aa4a34da-ed88-4f35-9960-8d79511ce9cb/)"></a-entity>
 
   <!-- Camera -->
-  <a-entity camera gamepad-controls look-controls position="-0.906 2.805 4.748" cursor-visible="enabled: false" wasd-controls="enabled: false">
+  <a-entity camera gamepad-controls look-controls position="-0.906 2.805 4.748" cursor-visible="enabled: true" wasd-controls="enabled: false">
+    <a-entity <cursor="maxDistance: 30"
+                        position="0 0 -1"
+                        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;"
+                        material="color: #CCC; shader: flat;"></a-entity
   </a-entity>
 
 
