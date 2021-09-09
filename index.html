@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1">
     <title>Resilient Coder Living Room</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -32,10 +33,12 @@
         <a-entity geometry="primitive: box; depth: 0.05; height: 0.5; width: 0.01" position="1.417 0.06 0.13" rotation="90 -20 180"  material="shader: flat; side: double; color:black"></a-entity>
         <a-entity geometry="primitive: box; depth: 0.5; height: 0.03; width: 0.4" position="1.6 0.06 0.2" rotation="0 -20 0"  material="shader: flat; side: double; color: #fff"></a-entity>
       </a-entity>
+      <!-- Remote -->
+      <a-entity geometry="primitive: plane; height: 1.240; width: 0.710" scale="1 0.7 1" position="0.207 1.365 4.054" rotation="-50 0 0" material="src:#rc-video shader: flat; transparent: true; src: url(./images/remote.png)" video-hander></a-entity>
       <!-- Snake -->
-      <a-entity look-at="[camera]" geometry="primitive: plane; height: 1.00; width: 2.10" scale="1 0.7 1" position="-1.33 0.891 1.770" rotation="-50 0 0" material="shader: flat; transparent: true; src: url(./images/snake.png)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 1.00; width: 2.10" scale="1 0.7 1" position="-1.33 0.891 1.770" rotation="-50 0 0" material="shader: flat; transparent: true; src: url(./images/snake.png)"></a-entity>
       <!--Dog -->
-      <a-entity look-at="[camera]" geometry="primitive: plane; height: 2.680; width: 2.90" position="-6.347 1.181 2.965" rotation="0 70 0" material="alphaTest: 0.5; shader: flat; transparent: true; src: url(./images/bulldog.png)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 2.680; width: 2.90" position="-6.347 1.181 2.965" rotation="0 70 0" material="alphaTest: 0.5; shader: flat; transparent: true; src: url(./images/bulldog.png)"></a-entity>
       <!-- Carpet -->
       <a-entity geometry="primitive: plane; height: 6; width: 12" position="0 -0.184 0.320" rotation="-90 0 0"  material="shader: flat; transparent: true; src: url(./images/rug.jpg)"></a-entity>
       <!-- Floor Front -->
@@ -158,12 +161,12 @@
       <!-- Front Top Right Image -->
       <a-entity geometry="primitive: plane; height: 3.50; width: 3.90" position="12.52 5.24 -6.39" material="shader: flat; transparent: true; src: url(./images/rs-front-top-right.PNG)"></a-entity>
       <!-- Back Room Right Image -->
-      <a-entity geometry="primitive: plane; height: 6.40; width: 6.290" position="-14.82 4.022 14.340" rotation="0 -270 0"  material="shader: flat; transparent: true; src: url(./images/rs-backroom-top-right.jpg)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 7.580; width: 7.210" position="-14.82 3.540 14.340" rotation="0 -270 0"  material="shader: flat; transparent: true; src: url(./images/rs-backroom-top-right.jpg)"></a-entity>
       <!-- Lights -->
       <a-entity geometry="primitive: plane; height: 2; width: 2" position="-8 6.33 2.46" rotation="0 100 0"  material="shader: flat; transparent: true; src: url(./images/rslogo2.jpg)"></a-entity>
       <a-entity geometry="primitive: plane; height: 2; width: 2" position="8.01 6.33 2.46" rotation="0 250 0"  material="shader: flat; transparent: true; src: url(./images/rslogo2.jpg)"></a-entity>
       <!-- Camera -->
-      <a-entity camera gamepad-controls look-controls position="-0.906 2.805 4.748" cursor-visible="enabled: true" wasd-controls="enabled: false">
+      <a-entity camera gamepad-controls look-controls="pointerLockEnabled: true" position="-0.906 2.805 4.748" cursor-visible="enabled: true" wasd-controls="enabled: false">
         <a-entity cursor="maxDistance: 30" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;" material="color: #CCC; shader: flat;"></a-entity>
       </a-entity>
     </a-scene>
