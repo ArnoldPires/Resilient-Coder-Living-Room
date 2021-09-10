@@ -40,7 +40,7 @@
       <!--Dog -->
       <a-entity geometry="primitive: plane; height: 2.680; width: 2.90" position="-6.347 1.181 2.965" rotation="0 70 0" material="alphaTest: 0.5; shader: flat; transparent: true; src: url(./images/bulldog.png)"></a-entity>
       <!-- Carpet -->
-      <a-entity geometry="primitive: plane; height: 6; width: 12" position="0 -0.184 0.320" rotation="-90 0 0"  material="shader: flat; transparent: true; src: url(./images/rug.jpg)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 6; width: 12" position="0 -0.184 0.320" rotation="-90 0 0"  material="shader: flat;  src: url(./images/rug.jpg)"></a-entity>
       <!-- Floor Front -->
       <a-entity geometry="primitive: box; depth: 18; height: 0.5; width: 30" position="0 -0.5 2" material="shader: flat; src: url(./images/floor.jpg); repeat: 5 5"></a-entity>
       <!-- Floor Back -->
@@ -49,7 +49,10 @@
       <a-entity geometry="primitive: box; depth: 18; height: 0.5; width: 30" position="0 7.5 2" material="shader: flat;  metalness: 0.8; src: url(./images/floor.jpg); repeat: 5 5"></a-entity>
       <a-entity geometry="primitive: box; depth: 18; height: 0.5; width: 30" position="0 7.5 20" material="shader: flat;  metalness: 0.8; src: url(./images/floor.jpg); repeat: 5 5"></a-entity>
       <!--Ceiling Art -->
-      <a-entity geometry="primitive: plane; height: 5; width: 7.80" position="-3.44 6.71 1.45" rotation="80 0 0"  material="shader: flat; src: url(./images/leon.JPG)"></a-entity>
+       <!-- Ceiling Left Image -->
+      <a-entity geometry="primitive: plane; height: 5; width: 7.80" position="-3.805 6.71 1.45" rotation="80 0 0"  material="shader: flat; src: url(./images/rs-ceiling-left.PNG)"></a-entity>
+      <!-- Ceiling Right Image -->
+      <a-entity geometry="primitive: plane; height: 5; width: 7.80" position="3.994 6.71 1.451" rotation="80 0 0"  material="shader: flat; src: url(./images/rs-ceiling-right.jpg)"></a-entity>
       <!-- Wall Front -->
       <a-entity geometry="primitive: box; depth: 0.2; height: 7.5; width: 30" position="0 3.5 -6.5" material="shader: standard; side: double; src: url(./images/wallbeamwood.jpg); repeat: 10 10"></a-entity>
       <a-entity geometry="primitive: box; depth: 0.2; height: 7.5; width: 14" position="0 3.5 11.1" material="shader: standard; side: double; src: url(./images/wallbeamwood.jpg); repeat: 10 10"></a-entity>
@@ -66,6 +69,11 @@
       <!-- Doors -->
       <a-entity geometry="primitive: plane; height: 5; width: 14" position="-14.89 2.3 2.3" rotation="0 90 0"  material="shader: flat; side: double; transparent: true; src: url(./images/doors.png)"></a-entity>
       <a-entity geometry="primitive: plane; height: 5; width: 14" position="14.89 2.3 2.3" rotation="0 90 0"  material="shader: flat; side: double; transparent: true; src: url(./images/doors.png)"></a-entity>
+      <!-- Outside Images -->
+      <!-- Boston Right -->
+      <a-entity geometry="primitive: plane; height: 5; width: 14" position="14.890 2.300 2.300" rotation="0 -90 0"  material="shader: flat; src: url(./images/boston-right.JPG)"></a-entity>
+      <!-- Boston Left -->
+      <a-entity geometry="primitive: plane; height: 4.620; width: 14.200" position="-15.106 2.353 2.285" rotation="0 90 0"  material="shader: flat; src: url(./images/boston-left.JPG)"></a-entity>
       <!-- Beams -->
       <a-entity geometry="primitive: box; depth: 0.3; height: 0.4; width: 30" position="0 7.3 -6.3" material="shader: flat; src: url(./images/wallbeamwood.jpg); repeat: 2 1"></a-entity>
       <a-entity geometry="primitive: box; depth: 0.3; height: 0.4; width: 5" position="12.2 3.3 -6.3" material="shader: flat; src: url(./images/wallbeamwood.jpg); repeat: 2 1"></a-entity>
@@ -117,11 +125,13 @@
       <!-- Third Shelf Right Item -->
       <a-entity geometry="primitive: plane; height: 0.9; width: 3" position="7.5 0.42 -5.99" material="shader: flat; transparent: true; src: url(./images/3rd-shelf-right.png)"></a-entity>
       <!-- Second Shelf Right Item -->
-      <a-entity geometry="primitive: plane; height: 1.710; width: 1.70" position="7.438 2.734 -5.93" material="shader: flat; transparent: true; src: url(./images/2nd-shelf-right.jpg)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 1.710; width: 1.70" position="7.438 2.734 -5.93" material="shader: flat; src: url(./images/2nd-shelf-right.jpg)"></a-entity>
       <!-- First Shelf Left Item -->
       <a-entity geometry="primitive: plane; height: 1.3; width: 3.910" position="-7.714 4.438 -5.99" material="shader: flat; transparent: true; src: url(./images/1st-shelf-left.png)"></a-entity>
-      <!-- Second Shelf Left Item -->
-      <a-entity geometry="primitive: plane; height: 1.24; width: 1" position="-6.8 2.50 -5.99" material="shader: flat; transparent: true; src: url(./images/2nd-shelf-left.png)"></a-entity>
+      <!-- Second Shelf Left Item One -->
+      <a-entity geometry="primitive: plane; height: 1.600; width: 1.820" position="-8.816 2.705 -5.99" material="shader: flat; src: url(./images/2nd-shelf-left-one.jpg)"></a-entity>
+      <!-- Second Shelf Left Item Two -->
+      <a-entity geometry="primitive: plane; height: 1.600; width: 1.820" position="-6.654 2.681 -5.99" material="shader: flat; transparent: true; src: url(./images/2nd-shelf-left-two.png)"></a-entity>
       <!-- Third Shelf Left Item -->
       <a-entity geometry="primitive: plane; height: 1.80; width: 3.070" position="-7.70 0.556 -5.99" material="shader: flat; transparent: true; src: url(./images/3rd-shelf-left.png)"></a-entity>
       <!-- Wainscoting Front -->
@@ -139,32 +149,36 @@
       <a-entity geometry="primitive: box; depth: 0.2; height: 2; width: 0.2" position="-2.95 0.6 10.7" material="shader: flat; src: url(./images/art-table.jpg); repeat: 1 1"></a-entity>
       <!-- Art -->
       <!-- Art Table Middle Image -->
-      <a-entity geometry="primitive: plane; height: 4; width: 6" position="0.02 4.50 10.99" rotation="0 180 0"  material="shader: flat; transparent: true; src: url(./images/rs-art-tab-mid.jpg)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 4; width: 6" position="0.447 4.50 10.99" rotation="0 180 0"  material="shader: flat; src: url(./images/rs-art-tab-mid.jpg)"></a-entity>
       <!-- Back Room Left Image -->
       <a-entity geometry="primitive: plane; height: 3.770; width: 4.930" position="14.886 5.344 13.567" rotation="0 -90 0"  material="shader: flat; src: url(./images/rs-backroom-top-left.jpg)"></a-entity>
-      <!-- Ceiling Left Image -->
-      <a-entity geometry="primitive: plane; height: 5; width: 7.80" position="-3.44 6.71 1.45" rotation="80 0 0"  material="shader: flat; src: url(./images/rs-ceiling-left.PNG)"></a-entity>
       <!-- Art Table Left Image -->
-      <a-entity geometry="primitive: plane; height: 4; width: 3.20" position="4.82 4.49 10.98" rotation="0 180 0"  material="shader: flat; transparent: true; src: url(./images/leon.JPG)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 4; width: 3.20" position="5.045 4.49 10.98" rotation="0 180 0"  material="shader: flat; src: url(./images/leon.JPG)"></a-entity>
       <!-- Art Table left Ground Image -->
       <a-entity geometry="primitive: plane; height: 1.90; width: 0.90" position="5.177 0.577 10.929" rotation="0 180 0"  material="shader: flat; transparent: true; src: url(./images/art-table-left.png)"></a-entity>
       <!-- Right Image -->
       <a-entity geometry="primitive: plane; height: 5.90; width: 10.90" position="11.37 1.97 4.72" rotation="0 260 0"  material="shader: flat; transparent: true; src: url(./images/right.png)"></a-entity>
       <!-- Art Table Right Image -->
-      <a-entity geometry="primitive: plane; height: 4; width: 3.20" position="-4.80 4.50 10.96" rotation="0 180 0"  material="shader: flat; transparent: true; src: url(./images/rs-art-tab-right.jpg)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 4; width: 4.110" position="-4.603 4.50 10.96" rotation="0 180 0"  material="shader: flat; src: url(./images/rs-art-tab-right.jpg)"></a-entity>
       <!-- Front Top Left Image -->
-      <a-entity geometry="primitive: plane; height: 4; width: 4.20" position="-12.40 5.11 -6.38" material="shader: flat; transparent: true; src: url(./images/rs-front-top-left.jpg)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 4; width: 4.20" position="-12.40 5.11 -6.38" material="shader: flat; src: url(./images/rs-front-top-left.jpg)"></a-entity>
       <!-- Art Table Bottom Right Image -->
-      <a-entity geometry="primitive: plane; height: 1.15; width: 1.40" position="-0.72 2.17 9.93" rotation="0 180 0"  material="shader: flat; transparent: true; src: url(./images/rs-art-tab-bottom-right.png)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 1.15; width: 1.40" position="-2.092 2.17 9.93" rotation="0 180 0"  material="shader: flat; transparent: true; src: url(./images/rs-art-tab-bottom-right.png)"></a-entity>
+      <!-- Art Table Bottom Middle Image -->
+      <a-entity geometry="primitive: plane; height: 1.15; width: 2.450" position="0.092 2.17 9.93" rotation="0 180 0"  material="shader: flat; src: url(./images/rs-art-tab-bottom-middle.PNG)"></a-entity>
       <!-- Art Table Bottom Left Image -->
-      <a-entity geometry="primitive: plane; height: 1.15; width: 0.920" position="1.42 2.18 9.90" rotation="0 180 0"  material="shader: flat; transparent: true; src: url(./images/rs-art-tab-bottom-left.PNG)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 1.15; width: 0.920" position="2.032 2.18 9.90" rotation="0 180 0"  material="shader: flat; src: url(./images/rs-art-tab-bottom-left.PNG)"></a-entity>
+      <!-- First Shelf Right Image -->
+      <a-entity geometry="primitive: plane; height: 1.670; width: 2.570" position="8.286 4.642 -6.259" rotation="0 0 0"  material="shader: flat; src: url(./images/rs-1st-shelf-right.jpg)"></a-entity>
+      <!-- Art Table Bottom Bottom Right Image -->
+      <a-entity geometry="primitive: plane; height: 2.640; width: 3.340" position="-4.971 1.184 10.959" rotation="0 180 0"  material="shader: flat; src: url(./images/rs-art-tab-bot-bot-right.PNG)"></a-entity>
       <!-- Front Top Right Image -->
-      <a-entity geometry="primitive: plane; height: 3.50; width: 3.90" position="12.52 5.24 -6.39" material="shader: flat; transparent: true; src: url(./images/rs-front-top-right.PNG)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 3.50; width: 3.90" position="12.52 5.24 -6.39" material="shader: flat; src: url(./images/rs-front-top-right.PNG)"></a-entity>
       <!-- Back Room Right Image -->
-      <a-entity geometry="primitive: plane; height: 7.580; width: 7.210" position="-14.82 3.540 14.340" rotation="0 -270 0"  material="shader: flat; transparent: true; src: url(./images/rs-backroom-top-right.jpg)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 7.580; width: 7.210" position="-14.82 3.540 14.340" rotation="0 -270 0"  material="shader: flat; src: url(./images/rs-backroom-top-right.jpg)"></a-entity>
       <!-- Lights -->
-      <a-entity geometry="primitive: plane; height: 2; width: 2" position="-8 6.33 2.46" rotation="0 100 0"  material="shader: flat; transparent: true; src: url(./images/rslogo2.jpg)"></a-entity>
-      <a-entity geometry="primitive: plane; height: 2; width: 2" position="8.01 6.33 2.46" rotation="0 250 0"  material="shader: flat; transparent: true; src: url(./images/rslogo2.jpg)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 2; width: 2" position="-8.533 6.33 2.46" rotation="0 100 0"  material="shader: flat; transparent: true; src: url(./images/lights.png)"></a-entity>
+      <a-entity geometry="primitive: plane; height: 2; width: 2" position="8.839 6.33 2.46" rotation="0 260 0"  material="shader: flat; transparent: true; src: url(./images/lights.png)"></a-entity>
       <!-- Camera -->
       <a-entity camera gamepad-controls look-controls="pointerLockEnabled: true" position="-0.906 2.805 4.748" cursor-visible="enabled: true" wasd-controls="enabled: false">
         <a-entity cursor="maxDistance: 30" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;" material="color: #CCC; shader: flat;"></a-entity>
