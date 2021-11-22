@@ -6,9 +6,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1">
     <title>Resilient Coder Living Room</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://vr.austinknight.com/assets/aframe-look-at-component.min.js"></script>
-    <script src="https://vr.austinknight.com/assets/aframe-event-set-component@3.0.1"></script>
+    <script src="/js/a-frame1.2.0.js"></script>
+    <script src="./js/aframe-look-at-component.1.0.0.min.js"></script>
+    <script src="./js/aframe-extras6.1.1.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -35,9 +35,9 @@
         <a-entity geometry="primitive: box; depth: 0.5; height: 0.03; width: 0.4" position="1.6 0.06 0.2" rotation="0 -20 0"  material="shader: flat; side: double; color: #fff"></a-entity>
       </a-entity>
       <!-- Snake -->
-      <a-entity geometry="primitive: plane; height: 1.00; width: 2.10" scale="1 0.7 1" position="-1.33 0.891 1.770" rotation="-50 0 0" material="shader: flat; transparent: true; src: url(./images/snake.png)"></a-entity>
+      <a-entity look-at="[camera]" geometry="primitive: plane; height: 1.00; width: 2.10" scale="1 0.7 1" position="-1.33 0.891 1.770" rotation="-50 0 0" material="shader: flat; transparent: true; src: url(./images/snake.png)"></a-entity>
       <!--Dog -->
-      <a-entity geometry="primitive: plane; height: 2.680; width: 2.90" position="-6.347 1.181 2.965" rotation="0 70 0" material="alphaTest: 0.5; shader: flat; transparent: true; src: url(./images/bulldog.png)"></a-entity>
+      <a-entity look-at="[camera]" geometry="primitive: plane; height: 2.680; width: 2.90" position="-6.347 1.181 2.965" rotation="0 70 0" material="alphaTest: 0.5; shader: flat; transparent: true; src: url(./images/bulldog.png)"></a-entity>
       <!-- Carpet -->
       <a-entity geometry="primitive: plane; height: 6; width: 12" position="0 -0.184 0.320" rotation="-90 0 0"  material="shader: flat; transparent: true; src: url(./images/rug.jpg)"></a-entity>
       <!-- Floor Front -->
@@ -170,4 +170,5 @@
       </a-entity>
     </a-scene>
   </body>
+  <script src="./js/index.js"></script>
 </html>
